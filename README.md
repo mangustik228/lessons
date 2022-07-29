@@ -1,12 +1,12 @@
 ﻿### Просмотренные лекции из открытых источников, прослушенные и записанные в разных форматах
 
-**tkinter_lessons:**  <a name="tkinter"></a> 
+<a name="tkinter">**tkinter_lessons:**</a> 
 Лекции по библиотеки tkinter, оригинал: [egoroff](https://www.youtube.com/watch?v=mLySBcS-6p0&list=PLQAt0m1f9OHsd6U5okp1XLoYyQR0oBjMM)
 
-**OOP_lessons:**  <a name="OOP"></a> 
+<a name="OOP">**OOP_lessons:**</a> 
 Лекции по ООП, оригинал: [egoroff](https://www.youtube.com/watch?v=jtIq61A1LLw&list=PLQAt0m1f9OHvyjJNjZK_unnLwMOXPTja8)
 
-**different_lessons:**  <a name="Разные лекции"></a> 
+<a name="Разные лекции">**different_lessons:**</a> 
 - closure (Замыкание/декораторы)
 - dif_lessons_from_egoroff_1/2 (Различиные лекции по python)
 - regular - Регулярные выражения
