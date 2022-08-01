@@ -31,3 +31,9 @@
 **khyrianov_lessons_algoritmi**  
 Лекции Хирьянова [Алгоритмы и структуры данных](https://www.youtube.com/playlist?list=PLRDzFCPr95fK7tr47883DFUbm4GeOjjc0)
 
+**front** 
+Скаченные лекции по front-end разработки, html+css не записывал, только js.
+
+**patterns**
+Jupiter notebook с примерами паттернов (планирую пополнять его длительное время)
+
