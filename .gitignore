@@ -1,2 +1,17 @@
 ﻿parsing-old
 front/js/examples.js
+*.json
+*.csv 
+*.txt 
+*.xlsx
+*.session
+__pycache__
+connection.py
+*.jpg
+*.png
+extenstions_chrome 
+tmp
+*.pdf
+*.webp
+venv
+.ipynb_checkpoints

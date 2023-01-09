@@ -1,1 +1,0 @@
-"{\n  \"response\": {\n    \"count\": 1000,\n    \"items\": [\n      {\n        \"first_name\": \"Vasiliy\",\n        \"second_name\": \"Ovchinnikov\",\n        \"id\": 12345\n      },\n      {\n        \"first_name\": \"Kristina\",\n        \"second_name\": \"Kochi\",\n        \"id\": 54321\n      }\n    ]\n  }\n}"
