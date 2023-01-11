@@ -15,3 +15,4 @@ tmp
 *.webp
 venv
 .ipynb_checkpoints
+*.swp
