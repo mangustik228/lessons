@@ -75,11 +75,8 @@ class Parser:
     async def start_parsing(self):
         logger.debug('Запускаю парсер')
         async with aiohttp.ClientSession() as session:
-            tasks = []
             for url in self.urls_pagination:
-                task = asyncio.create_task(self.get_links(url, session))
-                tasks.append(task)
-            await asyncio.gather(*tasks)
+                await self.get_links(url, session)
 
 
 
