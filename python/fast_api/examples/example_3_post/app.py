@@ -28,14 +28,13 @@ def index(request: Request):
 def users(skip:int = 0, limit:int = 10):
     return fake_db['users'][skip:skip+limit]
 
-@api.post('/users/create')
+@api.post('/user/create')
 def post_users(user: User):
     fake_db['users'].append(user)
     return {'User Created!': user}
 
 @api.put('/user/{user_id:int}')
 def update_user(user_id: int, user: User = fastapi.Body()):
-    # return fastapi.Body()
     for index, old_user in enumerate(fake_db['users']):
         if old_user['id'] == user_id:
             fake_db['users'][index] = user
