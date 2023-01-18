@@ -2,7 +2,7 @@ import pydantic_models as pyd
 import bit
 import config
 from datetime import datetime
-from database import *
+from .db import *
 from pony.orm import * 
 
 @db_session # pony.orm - автоматом коммитит и что то другое
@@ -25,7 +25,7 @@ def create_wallet(user: pyd.User=None, private_key: str = None, testnet:bool = T
 
 
 @db_session 
-def create_user(tg_id: int, nick: str= None):
+def create_user(tg_id: int, nick: str= None) -> User:
     '''
     Функция созданию юзера(сразу создает ему кошелек)
     '''
@@ -115,7 +115,7 @@ def update_all_wallets():
     return True
 
 @db_session 
-def get_user_by_id(id:int):
+def get_user_by_id(id:int) -> User:
     return User[id]
 
 @db_session
@@ -161,7 +161,7 @@ def get_user_info(u:pyd.User):
             "received_transactions": u.receivered_transactions if u.receivered_transactions else []}
 
 @db_session
-def update_user(user: pyd.User):
+def update_user(user: pyd.User_to_update):
     user_to_update = User[user.id]
     if user.tg_id:
         user_to_update.tg_id = user.tg_id

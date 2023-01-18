@@ -34,3 +34,15 @@ class Transaction(BaseModel):
     fee: float
     date_of_transaction: datetime
     tx_hash: str
+
+class User_to_update(BaseModel):
+    id:int 
+    tg_id: int = None 
+    nick: str = None 
+    create_date: datetime = None 
+    wallet: "Wallet" = None 
+
+class User_to_create(BaseModel):
+    tg_id: int = None 
+    nick: str = None 
+
