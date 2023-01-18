@@ -18,3 +18,6 @@ venv
 *.swp
 venv
 *.log
+*.sql
+*.sqlite
+
