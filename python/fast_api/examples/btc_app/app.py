@@ -3,16 +3,11 @@ from database import crud
 import pydantic_models as pyd 
 import config 
 import fastapi 
-from fastapi import FastAPI, Query, Body 
+from fastapi import FastAPI, Query, Body
 from time import sleep 
 
 api = FastAPI()
 
-
-@api.get('/just_sleep')
-def just_sleep():
-    sleep(15)
-    return 'Я поспал'
 
 @api.get("/user/{user_id}")
 def read_user(user_id: str, query: str = None):
@@ -73,3 +68,8 @@ def get_users(skip: int=0, limit: int=10):
 @crud.db_session 
 def get_info_by_tg_id(tg_id):
     return crud.get_user_by_tg_id(tg_id).to_dict()
+
+# @api.post('/create_transaction')
+# def create_transaction(transaction: pyd.CreateTransaction = Body()):
+#     user = crud.get_user_by_id(transaction.receiver_address)
+#     return user.to_dict()

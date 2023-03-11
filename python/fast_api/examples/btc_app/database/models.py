@@ -36,5 +36,3 @@ class Transaction(db.Entity):
     fee = Required(float)
     date_of_transaction = Required(datetime)
     tx_hash = Required(str)
-
-

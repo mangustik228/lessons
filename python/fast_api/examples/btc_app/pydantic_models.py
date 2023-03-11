@@ -46,3 +46,8 @@ class User_to_create(BaseModel):
     tg_id: int = None 
     nick: str = None 
 
+
+class CreateTransaction(BaseModel):
+    receiver_address: str = None 
+    amount_btc_without_fee: float = None 
+
