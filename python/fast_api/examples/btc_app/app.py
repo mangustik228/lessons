@@ -3,10 +3,16 @@ from database import crud
 import pydantic_models as pyd 
 import config 
 import fastapi 
-from fastapi import FastAPI, Query, Body
+from fastapi import FastAPI, Query, Body, Depends
 from time import sleep 
+from fastapi.security import OAuth2PasswordBearer
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 api = FastAPI()
+
+@api.get("/items/")
+async def read_items(token: str = Depends(oauth2_scheme)):
+    return {"token": token}
 
 
 @api.get("/user/{user_id}")

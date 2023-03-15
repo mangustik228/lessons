@@ -51,3 +51,9 @@ class CreateTransaction(BaseModel):
     receiver_address: str = None 
     amount_btc_without_fee: float = None 
 
+
+User.update_forward_refs()
+User_to_create.update_forward_refs()
+Transaction.update_forward_refs()
+CreateTransaction.update_forward_refs()
+Wallet.update_forward_refs()
