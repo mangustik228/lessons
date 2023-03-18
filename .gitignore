@@ -20,4 +20,5 @@ venv
 *.log
 *.sql
 *.sqlite
-
+*.ini
+migrations 
