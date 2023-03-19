@@ -21,4 +21,5 @@ venv
 *.sql
 *.sqlite
 *.ini
-migrations 
+migrations
+.env 
