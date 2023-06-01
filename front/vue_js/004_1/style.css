@@ -1,0 +1,39 @@
+body {
+    background: #b29db9;
+}
+
+.container { 
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 15px #2f2631aa;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 2rem;
+    display: inline;
+    padding: 0.6rem 2.4rem;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: 0.2s;
+    box-shadow: 1px 5px 15px #2f263165;
+}
+.btn:hover {
+    box-shadow: none;
+    background: #2f263109;
+}

@@ -61,4 +61,10 @@
 ---
 - **sql**  
 Название говорит за себя, но по большей части инфо как работать с SQL с помощью python
+
 ---
+
+---
+- **pytest**
+- мини-курс на ютуб [youtube](https://www.youtube.com/watch?v=MIHXRF6YMN4&list=PLlKID9PnOE5hCuNW8L-qxC12U7WPWG6YS&index=2)
+- также доп. курс [SolveMe](https://www.youtube.com/watch?v=cBt7DveuuS0&list=PLB2iiSfKWtvykq9s0plSVI_Du60i0iphU&index=2)

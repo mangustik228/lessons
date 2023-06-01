@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Document</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <div class="container" id="app" v-cloak>
+
+        <div class="card center">
+            <div v-html="myhtml"></div>
+            <h1 v-text="title"></h1>
+        </div>
+
+        <button class="btn" @click="title = 'hello'">change name</button>
+
+        <ul class="list">
+            <li class="list-item" v-for="(value, key) in person">
+                <strong v-text="key"></strong><span v-text="':' + value"></span>
+            </li>
+        </ul>
+        
+                <div class="form-control">
+                    <input type="text" @keypress.enter="addItem($event)" ref="myInput">
+                </div>
+            
+
+        <ul class="list" v-if="items.length">
+            <li class="list-item" 
+            v-for="(item, i) in items" 
+            @click.middle="deleteItem(i)" 
+            v-text="item"></li>
+        </ul>
+        <h3 v-show="!items.length" @click="items = [1,2,3,4,5]"> Элементов нет</h3>
+
+        <ul class="list">
+            <li class="list-item" v-for="(item, index) in eventItems" :key="index">{{ index }}(index) = {{ item }} (item)</li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

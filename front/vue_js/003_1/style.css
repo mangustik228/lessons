@@ -1,0 +1,19 @@
+.container { 
+    background: rgb(255, 255, 255);
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 15px 30px;
+    border: 1px solid;
+    box-shadow: 2px 5px 15px rgba(78, 117, 120, 0.9);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+}
+
+body {
+    background: #7f9f9d;
+}

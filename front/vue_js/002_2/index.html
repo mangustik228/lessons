@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link rel="stylesheet" href="theme.css" />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="card">
+        <h1 :style="{color: inputValue.length > 5 ? 'darkred' : 'green'}">{{ title }}</h1>
+        <div class="form-control">
+          <input type="text" 
+          :placeholder="placeholder" 
+          v-model="inputValue"
+          @keypress.enter="addNewNote" />
+        </div>
+
+
+
+        <h2>Note: {{ inputValue }}</h2>
+        <button class="btn" @click="addNewNote">Добавить</button>
+        <hr />
+        <ul class="list" v-if="notes.length > 0">
+          <li class="list-item" v-for="(note, i) in notes">
+            <!-- <span :class="{
+              'primary':true,
+              'bold':note.length > 5}"> {{ toUpperCase(note) }} </span>  -->
+            <span :class="['bold',{'primary':note.length > 5}]"> {{ toUpperCase(note) }} </span> 
+            <button class="btn danger" @click="deleteNote(i)">Удалить</button>
+          </li>
+          <hr />
+          <li>
+            <strong>Общее количество: {{ notes.length }} | Удвоенное кол-во {{ doubleCountComputed }} </strong>
+          </li>
+        </ul>
+        <!-- <div v-if="notes.length === 0">Заметок нет, добавьте первую</div> -->
+        <div v-else-if="notes.length === 1">LALALALA</div>
+        <div v-else>Заметок нет, добавьте первую</div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+

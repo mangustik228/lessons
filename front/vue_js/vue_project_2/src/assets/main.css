@@ -1,0 +1,19 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: grey;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+.wraper {
+    max-width: 1000px;
+    background: #dddddd;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 25px 45px;
+}

@@ -1,0 +1,28 @@
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ededed;
+    border: 1ps solid #4b2727d2;
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding: 0;
+}
+
+body {
+    background: #a180806f;
+}
+
+.btn {
+    padding: 15px 40px;
+    margin: 0 auto;
+}
