@@ -1,0 +1,3 @@
+project/venv
+project/.pytest_cache 
+./*__pycache__
