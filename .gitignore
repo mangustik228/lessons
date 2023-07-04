@@ -1,5 +1,6 @@
 ﻿parsing-old
 front/js/examples.js
+data
 *.json
 *.csv 
 *.txt 
