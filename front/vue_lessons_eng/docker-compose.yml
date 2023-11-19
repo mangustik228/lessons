@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  lesson_1:
+    build:
+      context: ./lesson_1
+      dockerfile: Dockerfile
+    volumes:
+      - ./lesson_1:/app
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+    
