@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  # Контейнер для Django приложения
+  web:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"  # Прокидываем порт приложения
+    volumes:
+      - ./app:/app  # Монтируем текущий каталог в директорию контейнера /app
+    env_file:
+      - .env
+    entrypoint: [ "/app/entrypoint.sh" ]
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
